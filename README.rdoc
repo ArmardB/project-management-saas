@@ -6,6 +6,7 @@ the project. Artifact uploads are handled via AWS-SDK gem with the Amazon S3 buc
 
 * Bootstrap was used for styling.
 * Stripe gem utilized for adding premium access functionality
+* SENDGRID used for email confirmations
 
 The app can be seen at:
 https://armard-project-management-saas.herokuapp.com/
