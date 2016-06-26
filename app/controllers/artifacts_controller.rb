@@ -15,7 +15,7 @@ class ArtifactsController < ApplicationController
   # GET /artifacts/new
   def new
     @artifact = Artifact.new
-    @artifact.project_id = pararms[:project_id]
+    @artifact.project_id = params[:project_id]
   end
 
   # GET /artifacts/1/edit
@@ -58,8 +58,7 @@ class ArtifactsController < ApplicationController
   def destroy
     @artifact.destroy
     respond_to do |format|
-      format.html { redirect_to tenant_project_url(tenant_id: Tenant.current_tenant_id,
-          id: @artifact.project_id), notice: 'Artifact was successfully destroyed.' }
+      format.html { redirect_to tenant_project_url(tenant_id: Tenant.current_tenant_id, id: @artifact.project_id), notice: 'Artifact was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
