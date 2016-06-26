@@ -1,28 +1,11 @@
-== README
+ *** README ***
+This is a sample project management application built with Rails and was a follow along project to become familiar withmulti-tenancy using the milia gem.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A user can register their company and create a new project. The admin can invite other employees to join
+the project. Artifact uploads are handled via AWS-SDK gem with the Amazon S3 bucket.
 
-Things you may want to cover:
+* Bootstrap was used for styling.
+* Stripe gem utilized for adding premium access functionality
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+The app can be seen at:
+https://armard-project-management-saas.herokuapp.com/
